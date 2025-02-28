@@ -7,8 +7,21 @@
     "allowJs": true,
     "checkJs": true,
     "paths": {
-      "~/*": ["src/*"],
+      "~/*": [
+        "src/*"
+      ],
+      "$lib": [
+        "src/lib"
+      ],
+      "$lib/*": [
+        "src/lib/*"
+      ]
     },
   },
-  "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte"]
+  "include": [
+    "src/**/*.d.ts",
+    "src/**/*.ts",
+    "src/**/*.js",
+    "src/**/*.svelte"
+  ]
 }

@@ -35,7 +35,10 @@ export default {
     },
     server: {host: !!process.env.VITE_HOST},
     resolve: {
-        alias: [{find: '~', replacement: path.resolve('src')}],
+        alias: [
+            {find: '~', replacement: path.resolve('src')},
+            {find: '$lib', replacement: path.resolve('src/lib')},
+        ],
     },
     define: is_build ? {} : vars,
     plugins: [
