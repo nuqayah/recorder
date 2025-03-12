@@ -71,7 +71,10 @@ const config = {
                 sm: 'calc(var(--radius) - 4px)',
             },
             fontFamily: {
-                sans: [...fontFamily.sans],
+                sans: ['Kitab', ...fontFamily.sans],
+            },
+            listStyleType: {
+                arabic: 'arabic-indic',
             },
             keyframes: {
                 'accordion-down': {

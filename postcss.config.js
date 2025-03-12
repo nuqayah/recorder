@@ -1,7 +1,7 @@
 const prod = process.env.NODE_ENV === 'production'
 export default {
     plugins: {
-        '@tailwindcss/postcss': 'postcss-nesting',
+        '@tailwindcss/postcss': {},
         '@csstools/postcss-is-pseudo-class': prod && {},
         autoprefixer: prod && {},
         cssnano: prod && {
